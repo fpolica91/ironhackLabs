@@ -1,0 +1,17 @@
+<div>
+    <h2>Authors Are</h2>
+    {{#each auth}}
+
+    <div>
+        <li>{{this.firstName}} {{this.lastName}} </li>
+        <img src={{this.imageUrl}} alt="image">
+        <form action="/authors/{{this._id}}/delete">
+            <button>Delete</button>
+        </form>
+
+    </div>
+
+
+    {{/each}}
+
+</div>
